@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.backdrop-blur-glass {
+  backdrop-filter: blur(10px);
+  background: rgba(29, 95, 99, 0.85);
+}
+
+.backdrop-blur-light {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #b5e7db 0%, #eaf8f6 50%, #b6e2d3 100%);
+}
+
+.hero-gradient {
+  background: linear-gradient(to right, #2a7c6f, #74c2b8);
+}
